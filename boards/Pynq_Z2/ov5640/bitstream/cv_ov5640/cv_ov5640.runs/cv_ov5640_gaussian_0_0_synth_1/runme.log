@@ -1,0 +1,1813 @@
+
+*** Running vivado
+    with args -log cv_ov5640_gaussian_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cv_ov5640_gaussian_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source cv_ov5640_gaussian_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Pynq_CV_OV5640_master/boards/src/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.cache/ip 
+Command: synth_design -top cv_ov5640_gaussian_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 380.301 ; gain = 105.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cv_ov5640_gaussian_0_0' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_gaussian_0_0/synth/cv_ov5640_gaussian_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gaussian' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_AXILiteS_s_axi' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_ROWS_CTRL bound to: 5'b10100 
+	Parameter ADDR_COLS_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_COLS_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_AXILiteS_s_axi.v:203]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_AXILiteS_s_axi' (1#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Block_Mat_exit45_pro' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Block_Mat_exit45_pro.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Block_Mat_exit45_pro.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Mat_exit45_pro' (2#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Block_Mat_exit45_pro.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (3#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'GaussianBlur' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/GaussianBlur.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/GaussianBlur.v:92]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state14 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:83]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:331]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:346]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:360]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:373]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:375]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:379]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:381]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:385]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:387]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:726]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:729]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:732]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:765]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:777]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:789]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_k_buf_0_bkb' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D_k_buf_0_bkb.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_k_buf_0_bkb_ram' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D_k_buf_0_bkb.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D_k_buf_0_bkb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_k_buf_0_bkb_ram' (4#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D_k_buf_0_bkb.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_k_buf_0_bkb' (5#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D_k_buf_0_bkb.v:54]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mux_53_8qcK' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mux_53_8qcK.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mux_53_8qcK' (6#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mux_53_8qcK.v:11]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mularcU' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mularcU.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter dout_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mularcU_DSP48_0' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mularcU.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mularcU_DSP48_0' (7#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mularcU.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mularcU' (8#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mularcU.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulasc4' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulasc4.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulasc4_DSP48_1' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulasc4.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulasc4_DSP48_1' (9#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulasc4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulasc4' (10#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulasc4.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulatde' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulatde.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulatde_DSP48_2' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulatde.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulatde_DSP48_2' (11#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulatde.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulatde' (12#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulatde.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaudo' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaudo.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaudo_DSP48_3' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaudo.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaudo_DSP48_3' (13#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaudo.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaudo' (14#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaudo.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulavdy' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulavdy.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 20 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulavdy_DSP48_4' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulavdy.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulavdy_DSP48_4' (15#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulavdy.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulavdy' (16#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulavdy.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulawdI' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulawdI.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulawdI_DSP48_5' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulawdI.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulawdI_DSP48_5' (17#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulawdI.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulawdI' (18#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulawdI.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaxdS' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaxdS.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaxdS_DSP48_6' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaxdS.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaxdS_DSP48_6' (19#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaxdS.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaxdS' (20#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaxdS.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulayd2' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulayd2.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 20 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulayd2_DSP48_7' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulayd2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulayd2_DSP48_7' (21#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulayd2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulayd2' (22#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulayd2.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mul_mul_zec' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_zec.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mul_mul_zec_DSP48_8' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_zec.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mul_mul_zec_DSP48_8' (23#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_zec.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mul_mul_zec' (24#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_zec.v:14]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mul_mul_Aem' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_Aem.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mul_mul_Aem_DSP48_9' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_Aem.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mul_mul_Aem_DSP48_9' (25#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_Aem.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mul_mul_Aem' (26#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mul_mul_Aem.v:14]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_am_addmuBew' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_am_addmuBew.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 10 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_am_addmuBew_DSP48_10' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_am_addmuBew.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_am_addmuBew_DSP48_10' (27#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_am_addmuBew.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_am_addmuBew' (28#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_am_addmuBew.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaCeG' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaCeG.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter din2_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaCeG_DSP48_11' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaCeG.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaCeG_DSP48_11' (29#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaCeG.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaCeG' (30#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaCeG.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaDeQ' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaDeQ.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 21 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaDeQ_DSP48_12' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaDeQ.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaDeQ_DSP48_12' (31#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaDeQ.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaDeQ' (32#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaDeQ.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaEe0' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaEe0.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 20 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaEe0_DSP48_13' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaEe0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaEe0_DSP48_13' (33#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaEe0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaEe0' (34#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaEe0.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaFfa' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaFfa.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_mac_mulaFfa_DSP48_14' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaFfa.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaFfa_DSP48_14' (35#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaFfa.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_mac_mulaFfa' (36#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_mac_mulaFfa.v:34]
+INFO: [Synth 8-6157] synthesizing module 'gaussian_ama_addmGfk' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_ama_addmGfk.v:40]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gaussian_ama_addmGfk_DSP48_15' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_ama_addmGfk.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_ama_addmGfk_DSP48_15' (37#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_ama_addmGfk.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian_ama_addmGfk' (38#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian_ama_addmGfk.v:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4062]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4064]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4066]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4068]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4070]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4072]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4074]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4076]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4078]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4080]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4082]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4084]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4086]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4088]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4090]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4596]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4598]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4600]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4672]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4674]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4676]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4678]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4680]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4682]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4684]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4686]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4688]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4690]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4692]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4694]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4802]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4804]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4806]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4808]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4810]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4812]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4814]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4816]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4818]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4820]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4822]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4824]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4826]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4828]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4830]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5008]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5010]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5012]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5014]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5016]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:5018]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D' (39#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'GaussianBlur' (40#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/GaussianBlur.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:91]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:278]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:304]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:330]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:392]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (41#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A_shiftReg' (42#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A' (43#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d4_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d4_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d4_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d4_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d4_A_shiftReg' (44#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d4_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d4_A' (45#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w32_d4_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (46#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (47#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIHfu' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_Mat2AXIHfu.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIHfu_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_Mat2AXIHfu.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIHfu_shiftReg' (48#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_Mat2AXIHfu.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIHfu' (49#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_Mat2AXIHfu.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_GaussiaIfE' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_GaussiaIfE.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'start_for_GaussiaIfE_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_GaussiaIfE.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_GaussiaIfE_shiftReg' (50#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_GaussiaIfE.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_GaussiaIfE' (51#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/start_for_GaussiaIfE.v:45]
+WARNING: [Synth 8-6014] Unused sequential element AXIvideo2Mat_U0_ap_ready_count_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian.v:621]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit45_pro_U0_ap_ready_count_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian.v:629]
+INFO: [Synth 8-6155] done synthesizing module 'gaussian' (52#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/gaussian.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'cv_ov5640_gaussian_0_0' (53#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_gaussian_0_0/synth/cv_ov5640_gaussian_0_0.v:58]
+WARNING: [Synth 8-3331] design Filter2D_k_buf_0_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 455.184 ; gain = 180.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 455.184 ; gain = 180.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 455.184 ; gain = 180.863
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_gaussian_0_0/constraints/gaussian_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_gaussian_0_0/constraints/gaussian_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 828.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 830.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 831.672 ; gain = 2.980
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 831.672 ; gain = 557.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 831.672 ; gain = 557.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 831.672 ; gain = 557.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'gaussian_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'gaussian_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_6_addr_reg_5531_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1102]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_7_addr_reg_5537_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1118]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_8_addr_reg_5543_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1134]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_9_addr_reg_5549_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1150]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_5555_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1166]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_6_addr_reg_5561_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1182]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_7_addr_reg_5567_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1198]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_8_addr_reg_5573_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1214]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_9_addr_reg_5579_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1230]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_5585_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1246]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_6_addr_reg_5591_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1262]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_7_addr_reg_5597_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1278]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_8_addr_reg_5603_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1294]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_9_addr_reg_5609_reg[10:0]' into 'k_buf_0_val_5_addr_reg_5506_reg[10:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:1310]
+INFO: [Synth 8-4471] merging register 'tmp_294_2_reg_5345_reg[0:0]' into 'tmp_4_reg_5336_reg[0:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:4634]
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_reg_5477_reg' and it is trimmed from '32' to '11' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2843]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_1_0_1_reg_5404_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3243]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_1_0_2_reg_5409_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3244]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_1_0_3_reg_5414_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3245]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_1_0_4_reg_5419_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3246]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_1_reg_5399_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3247]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_neg394_i_reg_5322_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2986]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_5_reg_5331_reg' and it is trimmed from '32' to '3' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2990]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_4_reg_5336_reg' and it is trimmed from '31' to '2' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2989]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_294_2_reg_5345_reg' and it is trimmed from '31' to '10' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2988]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_8_fu_1043_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_11_fu_1113_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_342_0_1_fu_1119_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_342_0_2_fu_1125_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'gaussian_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'gaussian_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 831.672 ; gain = 557.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 19    
+	   2 Input     22 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     19 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 6     
+	   3 Input      3 Bit       Adders := 11    
+	   2 Input      2 Bit       Adders := 11    
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 25    
+	               24 Bit    Registers := 8     
+	               22 Bit    Registers := 3     
+	               21 Bit    Registers := 3     
+	               20 Bit    Registers := 9     
+	               19 Bit    Registers := 9     
+	               18 Bit    Registers := 9     
+	               17 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 211   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 120   
++---RAMs : 
+	              15K Bit         RAMs := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 168   
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 13    
+	   2 Input      2 Bit        Muxes := 19    
+	   4 Input      2 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 115   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gaussian_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Block_Mat_exit45_pro 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 26    
+Module Filter2D_k_buf_0_bkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              15K Bit         RAMs := 1     
+Module gaussian_mux_53_8qcK 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 17    
+	   2 Input     22 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     19 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   3 Input      3 Bit       Adders := 11    
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               32 Bit    Registers := 4     
+	               22 Bit    Registers := 3     
+	               21 Bit    Registers := 3     
+	               20 Bit    Registers := 9     
+	               19 Bit    Registers := 9     
+	               18 Bit    Registers := 9     
+	               17 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 183   
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 42    
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module GaussianBlur 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 14    
+Module fifo_w32_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w32_d4_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIHfu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module start_for_GaussiaIfE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module gaussian 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "data41" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'src_kernel_win_0_va_22_reg_5627_pp0_iter3_reg_reg[7:0]' into 'src_kernel_win_0_va_22_reg_5627_pp0_iter3_reg_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2873]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_1_va_22_reg_5671_pp0_iter3_reg_reg[7:0]' into 'src_kernel_win_1_va_22_reg_5671_pp0_iter3_reg_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2884]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_2_va_37_reg_5715_pp0_iter3_reg_reg[7:0]' into 'src_kernel_win_2_va_37_reg_5715_pp0_iter3_reg_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:2895]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_0_va_10_fu_306_reg[7:0]' into 'src_kernel_win_0_va_10_fu_306_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3057]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_1_va_10_fu_386_reg[7:0]' into 'src_kernel_win_1_va_10_fu_386_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3061]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_2_va_10_fu_466_reg[7:0]' into 'src_kernel_win_2_va_10_fu_466_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3065]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_0_va_14_fu_322_reg[7:0]' into 'src_kernel_win_0_va_14_fu_322_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3076]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_1_va_14_fu_402_reg[7:0]' into 'src_kernel_win_1_va_14_fu_402_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3080]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_2_va_14_fu_482_reg[7:0]' into 'src_kernel_win_2_va_14_fu_482_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3084]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_0_va_17_fu_334_reg[7:0]' into 'src_kernel_win_0_va_17_fu_334_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3092]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_1_va_17_fu_414_reg[7:0]' into 'src_kernel_win_1_va_17_fu_414_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3096]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_2_va_17_fu_494_reg[7:0]' into 'src_kernel_win_2_va_17_fu_494_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3100]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_0_va_18_fu_338_reg[7:0]' into 'src_kernel_win_0_va_18_fu_338_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3093]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_1_va_18_fu_418_reg[7:0]' into 'src_kernel_win_1_va_18_fu_418_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3097]
+INFO: [Synth 8-4471] merging register 'src_kernel_win_2_va_18_fu_498_reg[7:0]' into 'src_kernel_win_2_va_18_fu_498_reg[7:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/c706/hdl/verilog/Filter2D.v:3101]
+INFO: [Synth 8-5544] ROM "tmp_8_fu_1043_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_11_fu_1113_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_342_0_1_fu_1119_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_342_0_2_fu_1125_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP r_V_3_0_3_2_reg_5927_reg, operation Mode is: ((A:0x5c8)*B'')'.
+DSP Report: register src_kernel_win_0_va_4_fu_282_reg is absorbed into DSP r_V_3_0_3_2_reg_5927_reg.
+DSP Report: register src_kernel_win_0_va_5_fu_286_reg is absorbed into DSP r_V_3_0_3_2_reg_5927_reg.
+DSP Report: register r_V_3_0_3_2_reg_5927_reg is absorbed into DSP r_V_3_0_3_2_reg_5927_reg.
+DSP Report: operator gaussian_mul_mul_Aem_U75/gaussian_mul_mul_Aem_DSP48_9_U/p is absorbed into DSP r_V_3_0_3_2_reg_5927_reg.
+DSP Report: Generating DSP r_V_3_0_3_1_reg_5922_reg, operation Mode is: ((A:0x3d3)*BCIN'')'.
+DSP Report: register src_kernel_win_0_va_5_fu_286_reg is absorbed into DSP r_V_3_0_3_1_reg_5922_reg.
+DSP Report: register src_kernel_win_0_va_6_fu_290_reg is absorbed into DSP r_V_3_0_3_1_reg_5922_reg.
+DSP Report: register r_V_3_0_3_1_reg_5922_reg is absorbed into DSP r_V_3_0_3_1_reg_5922_reg.
+DSP Report: operator gaussian_mul_mul_zec_U74/gaussian_mul_mul_zec_DSP48_8_U/p is absorbed into DSP r_V_3_0_3_1_reg_5922_reg.
+DSP Report: Generating DSP gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p, operation Mode is: C+(A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p is absorbed into DSP gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/m is absorbed into DSP gaussian_mac_mulaFfa_U94/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p is absorbed into DSP gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/m is absorbed into DSP gaussian_mac_mulaEe0_U92/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp41_reg_5842_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_0_va_10_fu_306_reg is absorbed into DSP tmp41_reg_5842_reg.
+DSP Report: register src_kernel_win_0_va_11_fu_310_reg is absorbed into DSP tmp41_reg_5842_reg.
+DSP Report: register tmp41_reg_5842_reg is absorbed into DSP tmp41_reg_5842_reg.
+DSP Report: operator gaussian_mac_mulawdI_U65/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp41_reg_5842_reg.
+DSP Report: operator grp_fu_4236_p2 is absorbed into DSP tmp41_reg_5842_reg.
+DSP Report: Generating DSP gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p is absorbed into DSP gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/m is absorbed into DSP gaussian_mac_mulaxdS_U72/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: Generating DSP gaussian_mac_mularcU_U56/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A2*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U56/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U56/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U56/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP tmp38_reg_5767_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_0_va_14_fu_322_reg is absorbed into DSP tmp38_reg_5767_reg.
+DSP Report: register src_kernel_win_0_va_15_fu_326_reg is absorbed into DSP tmp38_reg_5767_reg.
+DSP Report: register tmp38_reg_5767_reg is absorbed into DSP tmp38_reg_5767_reg.
+DSP Report: operator gaussian_mac_mularcU_U56/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP tmp38_reg_5767_reg.
+DSP Report: operator grp_fu_4162_p2 is absorbed into DSP tmp38_reg_5767_reg.
+DSP Report: Generating DSP gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A''*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP p_Val2_75_0_0_1_reg_5654_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_0_va_17_fu_334_reg is absorbed into DSP p_Val2_75_0_0_1_reg_5654_reg.
+DSP Report: register src_kernel_win_0_va_18_fu_338_reg is absorbed into DSP p_Val2_75_0_0_1_reg_5654_reg.
+DSP Report: register p_Val2_75_0_0_1_reg_5654_reg is absorbed into DSP p_Val2_75_0_0_1_reg_5654_reg.
+DSP Report: operator gaussian_mac_mularcU_U51/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP p_Val2_75_0_0_1_reg_5654_reg.
+DSP Report: operator grp_fu_4121_p2 is absorbed into DSP p_Val2_75_0_0_1_reg_5654_reg.
+DSP Report: Generating DSP gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p is absorbed into DSP gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/m is absorbed into DSP gaussian_mac_mulasc4_U54/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: Generating DSP tmp37_reg_5762_reg, operation Mode is: (C+(A:0x11b)*B'')'.
+DSP Report: register B is absorbed into DSP tmp37_reg_5762_reg.
+DSP Report: register B is absorbed into DSP tmp37_reg_5762_reg.
+DSP Report: register tmp37_reg_5762_reg is absorbed into DSP tmp37_reg_5762_reg.
+DSP Report: operator gaussian_mac_mulatde_U55/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP tmp37_reg_5762_reg.
+DSP Report: operator gaussian_mac_mulatde_U55/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP tmp37_reg_5762_reg.
+DSP Report: Generating DSP gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p is absorbed into DSP gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/m is absorbed into DSP gaussian_mac_mulaudo_U63/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: Generating DSP p_Val2_75_0_1_2_reg_5837_reg, operation Mode is: (PCIN+(A:0x5c8)*B'')'.
+DSP Report: register B is absorbed into DSP p_Val2_75_0_1_2_reg_5837_reg.
+DSP Report: register B is absorbed into DSP p_Val2_75_0_1_2_reg_5837_reg.
+DSP Report: register p_Val2_75_0_1_2_reg_5837_reg is absorbed into DSP p_Val2_75_0_1_2_reg_5837_reg.
+DSP Report: operator gaussian_mac_mulavdy_U64/gaussian_mac_mulavdy_DSP48_4_U/p is absorbed into DSP p_Val2_75_0_1_2_reg_5837_reg.
+DSP Report: operator gaussian_mac_mulavdy_U64/gaussian_mac_mulavdy_DSP48_4_U/m is absorbed into DSP p_Val2_75_0_1_2_reg_5837_reg.
+DSP Report: Generating DSP gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p, operation Mode is: C+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p is absorbed into DSP gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/m is absorbed into DSP gaussian_mac_mulayd2_U73/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p, operation Mode is: C'+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register C is absorbed into DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p is absorbed into DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/m is absorbed into DSP gaussian_mac_mulaDeQ_U91/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: Generating DSP tmp44_reg_6032_reg, operation Mode is: (PCIN+(A:0x8bd)*B'')'.
+DSP Report: register B is absorbed into DSP tmp44_reg_6032_reg.
+DSP Report: register B is absorbed into DSP tmp44_reg_6032_reg.
+DSP Report: register tmp44_reg_6032_reg is absorbed into DSP tmp44_reg_6032_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U90/gaussian_mac_mulaCeG_DSP48_11_U/p is absorbed into DSP tmp44_reg_6032_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U90/gaussian_mac_mulaCeG_DSP48_11_U/m is absorbed into DSP tmp44_reg_6032_reg.
+DSP Report: Generating DSP tmp51_reg_5937_reg, operation Mode is: ((D'+A'')*(B:0x11b))'.
+DSP Report: register D is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: register A is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: register A is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: register tmp51_reg_5937_reg is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: operator gaussian_am_addmuBew_U77/gaussian_am_addmuBew_DSP48_10_U/m is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: operator gaussian_am_addmuBew_U77/gaussian_am_addmuBew_DSP48_10_U/ad is absorbed into DSP tmp51_reg_5937_reg.
+DSP Report: Generating DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p, operation Mode is: PCIN+(D'+A'')*(B:0x52).
+DSP Report: register D is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/m is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/ad is absorbed into DSP gaussian_ama_addmGfk_U95/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp49_reg_5932_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_0_va_22_reg_5627_pp0_iter3_reg_reg is absorbed into DSP tmp49_reg_5932_reg.
+DSP Report: register src_kernel_win_0_va_22_reg_5627_pp0_iter4_reg_reg is absorbed into DSP tmp49_reg_5932_reg.
+DSP Report: register tmp49_reg_5932_reg is absorbed into DSP tmp49_reg_5932_reg.
+DSP Report: operator gaussian_mac_mulawdI_U76/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp49_reg_5932_reg.
+DSP Report: operator grp_fu_4322_p2 is absorbed into DSP tmp49_reg_5932_reg.
+DSP Report: Generating DSP gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP gaussian_mac_mulatde_U93/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: Generating DSP r_V_3_1_3_2_reg_5972_reg, operation Mode is: ((A:0x5c8)*B'')'.
+DSP Report: register src_kernel_win_1_va_4_fu_362_reg is absorbed into DSP r_V_3_1_3_2_reg_5972_reg.
+DSP Report: register src_kernel_win_1_va_5_fu_366_reg is absorbed into DSP r_V_3_1_3_2_reg_5972_reg.
+DSP Report: register r_V_3_1_3_2_reg_5972_reg is absorbed into DSP r_V_3_1_3_2_reg_5972_reg.
+DSP Report: operator gaussian_mul_mul_Aem_U81/gaussian_mul_mul_Aem_DSP48_9_U/p is absorbed into DSP r_V_3_1_3_2_reg_5972_reg.
+DSP Report: Generating DSP r_V_3_1_3_1_reg_5967_reg, operation Mode is: ((A:0x3d3)*BCIN'')'.
+DSP Report: register src_kernel_win_1_va_5_fu_366_reg is absorbed into DSP r_V_3_1_3_1_reg_5967_reg.
+DSP Report: register src_kernel_win_1_va_6_fu_370_reg is absorbed into DSP r_V_3_1_3_1_reg_5967_reg.
+DSP Report: register r_V_3_1_3_1_reg_5967_reg is absorbed into DSP r_V_3_1_3_1_reg_5967_reg.
+DSP Report: operator gaussian_mul_mul_zec_U80/gaussian_mul_mul_zec_DSP48_8_U/p is absorbed into DSP r_V_3_1_3_1_reg_5967_reg.
+DSP Report: Generating DSP gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p, operation Mode is: C+(A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p is absorbed into DSP gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/m is absorbed into DSP gaussian_mac_mulaFfa_U100/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p is absorbed into DSP gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/m is absorbed into DSP gaussian_mac_mulaEe0_U98/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp60_reg_5867_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_1_va_10_fu_386_reg is absorbed into DSP tmp60_reg_5867_reg.
+DSP Report: register src_kernel_win_1_va_11_fu_390_reg is absorbed into DSP tmp60_reg_5867_reg.
+DSP Report: register tmp60_reg_5867_reg is absorbed into DSP tmp60_reg_5867_reg.
+DSP Report: operator gaussian_mac_mulawdI_U68/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp60_reg_5867_reg.
+DSP Report: operator grp_fu_4260_p2 is absorbed into DSP tmp60_reg_5867_reg.
+DSP Report: Generating DSP gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p is absorbed into DSP gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/m is absorbed into DSP gaussian_mac_mulaxdS_U78/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: Generating DSP gaussian_mac_mularcU_U59/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A2*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U59/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U59/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U59/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP tmp57_reg_5792_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_1_va_14_fu_402_reg is absorbed into DSP tmp57_reg_5792_reg.
+DSP Report: register src_kernel_win_1_va_15_fu_406_reg is absorbed into DSP tmp57_reg_5792_reg.
+DSP Report: register tmp57_reg_5792_reg is absorbed into DSP tmp57_reg_5792_reg.
+DSP Report: operator gaussian_mac_mularcU_U59/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP tmp57_reg_5792_reg.
+DSP Report: operator grp_fu_4187_p2 is absorbed into DSP tmp57_reg_5792_reg.
+DSP Report: Generating DSP gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A''*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP p_Val2_75_1_0_1_reg_5698_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_1_va_17_fu_414_reg is absorbed into DSP p_Val2_75_1_0_1_reg_5698_reg.
+DSP Report: register src_kernel_win_1_va_18_fu_418_reg is absorbed into DSP p_Val2_75_1_0_1_reg_5698_reg.
+DSP Report: register p_Val2_75_1_0_1_reg_5698_reg is absorbed into DSP p_Val2_75_1_0_1_reg_5698_reg.
+DSP Report: operator gaussian_mac_mularcU_U52/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP p_Val2_75_1_0_1_reg_5698_reg.
+DSP Report: operator grp_fu_4129_p2 is absorbed into DSP p_Val2_75_1_0_1_reg_5698_reg.
+DSP Report: Generating DSP gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p is absorbed into DSP gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/m is absorbed into DSP gaussian_mac_mulasc4_U57/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: Generating DSP tmp56_reg_5787_reg, operation Mode is: (C+(A:0x11b)*B'')'.
+DSP Report: register B is absorbed into DSP tmp56_reg_5787_reg.
+DSP Report: register B is absorbed into DSP tmp56_reg_5787_reg.
+DSP Report: register tmp56_reg_5787_reg is absorbed into DSP tmp56_reg_5787_reg.
+DSP Report: operator gaussian_mac_mulatde_U58/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP tmp56_reg_5787_reg.
+DSP Report: operator gaussian_mac_mulatde_U58/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP tmp56_reg_5787_reg.
+DSP Report: Generating DSP gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p is absorbed into DSP gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/m is absorbed into DSP gaussian_mac_mulaudo_U66/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: Generating DSP p_Val2_75_1_1_2_reg_5862_reg, operation Mode is: (PCIN+(A:0x5c8)*B'')'.
+DSP Report: register B is absorbed into DSP p_Val2_75_1_1_2_reg_5862_reg.
+DSP Report: register B is absorbed into DSP p_Val2_75_1_1_2_reg_5862_reg.
+DSP Report: register p_Val2_75_1_1_2_reg_5862_reg is absorbed into DSP p_Val2_75_1_1_2_reg_5862_reg.
+DSP Report: operator gaussian_mac_mulavdy_U67/gaussian_mac_mulavdy_DSP48_4_U/p is absorbed into DSP p_Val2_75_1_1_2_reg_5862_reg.
+DSP Report: operator gaussian_mac_mulavdy_U67/gaussian_mac_mulavdy_DSP48_4_U/m is absorbed into DSP p_Val2_75_1_1_2_reg_5862_reg.
+DSP Report: Generating DSP gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p, operation Mode is: C+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p is absorbed into DSP gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/m is absorbed into DSP gaussian_mac_mulayd2_U79/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p, operation Mode is: C'+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register C is absorbed into DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p is absorbed into DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/m is absorbed into DSP gaussian_mac_mulaDeQ_U97/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: Generating DSP tmp63_reg_6047_reg, operation Mode is: (PCIN+(A:0x8bd)*B'')'.
+DSP Report: register B is absorbed into DSP tmp63_reg_6047_reg.
+DSP Report: register B is absorbed into DSP tmp63_reg_6047_reg.
+DSP Report: register tmp63_reg_6047_reg is absorbed into DSP tmp63_reg_6047_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U96/gaussian_mac_mulaCeG_DSP48_11_U/p is absorbed into DSP tmp63_reg_6047_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U96/gaussian_mac_mulaCeG_DSP48_11_U/m is absorbed into DSP tmp63_reg_6047_reg.
+DSP Report: Generating DSP tmp70_reg_5982_reg, operation Mode is: ((D'+A'')*(B:0x11b))'.
+DSP Report: register D is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: register A is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: register A is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: register tmp70_reg_5982_reg is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: operator gaussian_am_addmuBew_U83/gaussian_am_addmuBew_DSP48_10_U/m is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: operator gaussian_am_addmuBew_U83/gaussian_am_addmuBew_DSP48_10_U/ad is absorbed into DSP tmp70_reg_5982_reg.
+DSP Report: Generating DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p, operation Mode is: PCIN+(D'+A'')*(B:0x52).
+DSP Report: register D is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/m is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/ad is absorbed into DSP gaussian_ama_addmGfk_U101/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp68_reg_5977_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_1_va_22_reg_5671_pp0_iter3_reg_reg is absorbed into DSP tmp68_reg_5977_reg.
+DSP Report: register src_kernel_win_1_va_22_reg_5671_pp0_iter4_reg_reg is absorbed into DSP tmp68_reg_5977_reg.
+DSP Report: register tmp68_reg_5977_reg is absorbed into DSP tmp68_reg_5977_reg.
+DSP Report: operator gaussian_mac_mulawdI_U82/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp68_reg_5977_reg.
+DSP Report: operator grp_fu_4368_p2 is absorbed into DSP tmp68_reg_5977_reg.
+DSP Report: Generating DSP gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP gaussian_mac_mulatde_U99/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: Generating DSP r_V_3_2_3_2_reg_6017_reg, operation Mode is: ((A:0x5c8)*B'')'.
+DSP Report: register src_kernel_win_2_va_4_fu_442_reg is absorbed into DSP r_V_3_2_3_2_reg_6017_reg.
+DSP Report: register src_kernel_win_2_va_5_fu_446_reg is absorbed into DSP r_V_3_2_3_2_reg_6017_reg.
+DSP Report: register r_V_3_2_3_2_reg_6017_reg is absorbed into DSP r_V_3_2_3_2_reg_6017_reg.
+DSP Report: operator gaussian_mul_mul_Aem_U87/gaussian_mul_mul_Aem_DSP48_9_U/p is absorbed into DSP r_V_3_2_3_2_reg_6017_reg.
+DSP Report: Generating DSP r_V_3_2_3_1_reg_6012_reg, operation Mode is: ((A:0x3d3)*BCIN'')'.
+DSP Report: register src_kernel_win_2_va_5_fu_446_reg is absorbed into DSP r_V_3_2_3_1_reg_6012_reg.
+DSP Report: register src_kernel_win_2_va_6_fu_450_reg is absorbed into DSP r_V_3_2_3_1_reg_6012_reg.
+DSP Report: register r_V_3_2_3_1_reg_6012_reg is absorbed into DSP r_V_3_2_3_1_reg_6012_reg.
+DSP Report: operator gaussian_mul_mul_zec_U86/gaussian_mul_mul_zec_DSP48_8_U/p is absorbed into DSP r_V_3_2_3_1_reg_6012_reg.
+DSP Report: Generating DSP gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p, operation Mode is: C+(A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p is absorbed into DSP gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: operator gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/m is absorbed into DSP gaussian_mac_mulaFfa_U106/gaussian_mac_mulaFfa_DSP48_14_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p is absorbed into DSP gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: operator gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/m is absorbed into DSP gaussian_mac_mulaEe0_U104/gaussian_mac_mulaEe0_DSP48_13_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp79_reg_5892_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_2_va_10_fu_466_reg is absorbed into DSP tmp79_reg_5892_reg.
+DSP Report: register src_kernel_win_2_va_11_fu_470_reg is absorbed into DSP tmp79_reg_5892_reg.
+DSP Report: register tmp79_reg_5892_reg is absorbed into DSP tmp79_reg_5892_reg.
+DSP Report: operator gaussian_mac_mulawdI_U71/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp79_reg_5892_reg.
+DSP Report: operator grp_fu_4284_p2 is absorbed into DSP tmp79_reg_5892_reg.
+DSP Report: Generating DSP gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p is absorbed into DSP gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: operator gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/m is absorbed into DSP gaussian_mac_mulaxdS_U84/gaussian_mac_mulaxdS_DSP48_6_U/p.
+DSP Report: Generating DSP gaussian_mac_mularcU_U62/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A2*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U62/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U62/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U62/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP tmp76_reg_5817_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_2_va_14_fu_482_reg is absorbed into DSP tmp76_reg_5817_reg.
+DSP Report: register src_kernel_win_2_va_15_fu_486_reg is absorbed into DSP tmp76_reg_5817_reg.
+DSP Report: register tmp76_reg_5817_reg is absorbed into DSP tmp76_reg_5817_reg.
+DSP Report: operator gaussian_mac_mularcU_U62/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP tmp76_reg_5817_reg.
+DSP Report: operator grp_fu_4212_p2 is absorbed into DSP tmp76_reg_5817_reg.
+DSP Report: Generating DSP gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/m, operation Mode is: A''*(B:0x52).
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: register A is absorbed into DSP gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: operator gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/m is absorbed into DSP gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/m.
+DSP Report: Generating DSP p_Val2_75_2_0_1_reg_5742_reg, operation Mode is: (PCIN+(A:0x11b)*B'')'.
+DSP Report: register src_kernel_win_2_va_17_fu_494_reg is absorbed into DSP p_Val2_75_2_0_1_reg_5742_reg.
+DSP Report: register src_kernel_win_2_va_18_fu_498_reg is absorbed into DSP p_Val2_75_2_0_1_reg_5742_reg.
+DSP Report: register p_Val2_75_2_0_1_reg_5742_reg is absorbed into DSP p_Val2_75_2_0_1_reg_5742_reg.
+DSP Report: operator gaussian_mac_mularcU_U53/gaussian_mac_mularcU_DSP48_0_U/p is absorbed into DSP p_Val2_75_2_0_1_reg_5742_reg.
+DSP Report: operator grp_fu_4137_p2 is absorbed into DSP p_Val2_75_2_0_1_reg_5742_reg.
+DSP Report: Generating DSP gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p is absorbed into DSP gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: operator gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/m is absorbed into DSP gaussian_mac_mulasc4_U60/gaussian_mac_mulasc4_DSP48_1_U/p.
+DSP Report: Generating DSP tmp75_reg_5812_reg, operation Mode is: (C+(A:0x11b)*B'')'.
+DSP Report: register B is absorbed into DSP tmp75_reg_5812_reg.
+DSP Report: register B is absorbed into DSP tmp75_reg_5812_reg.
+DSP Report: register tmp75_reg_5812_reg is absorbed into DSP tmp75_reg_5812_reg.
+DSP Report: operator gaussian_mac_mulatde_U61/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP tmp75_reg_5812_reg.
+DSP Report: operator gaussian_mac_mulatde_U61/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP tmp75_reg_5812_reg.
+DSP Report: Generating DSP gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p, operation Mode is: C+(A:0x3d3)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p is absorbed into DSP gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: operator gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/m is absorbed into DSP gaussian_mac_mulaudo_U69/gaussian_mac_mulaudo_DSP48_3_U/p.
+DSP Report: Generating DSP p_Val2_75_2_1_2_reg_5887_reg, operation Mode is: (PCIN+(A:0x5c8)*B'')'.
+DSP Report: register B is absorbed into DSP p_Val2_75_2_1_2_reg_5887_reg.
+DSP Report: register B is absorbed into DSP p_Val2_75_2_1_2_reg_5887_reg.
+DSP Report: register p_Val2_75_2_1_2_reg_5887_reg is absorbed into DSP p_Val2_75_2_1_2_reg_5887_reg.
+DSP Report: operator gaussian_mac_mulavdy_U70/gaussian_mac_mulavdy_DSP48_4_U/p is absorbed into DSP p_Val2_75_2_1_2_reg_5887_reg.
+DSP Report: operator gaussian_mac_mulavdy_U70/gaussian_mac_mulavdy_DSP48_4_U/m is absorbed into DSP p_Val2_75_2_1_2_reg_5887_reg.
+DSP Report: Generating DSP gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p, operation Mode is: C+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p is absorbed into DSP gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: operator gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/m is absorbed into DSP gaussian_mac_mulayd2_U85/gaussian_mac_mulayd2_DSP48_7_U/p.
+DSP Report: Generating DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p, operation Mode is: C'+(A:0x5c8)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: register C is absorbed into DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p is absorbed into DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: operator gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/m is absorbed into DSP gaussian_mac_mulaDeQ_U103/gaussian_mac_mulaDeQ_DSP48_12_U/p.
+DSP Report: Generating DSP tmp82_reg_6062_reg, operation Mode is: (PCIN+(A:0x8bd)*B'')'.
+DSP Report: register B is absorbed into DSP tmp82_reg_6062_reg.
+DSP Report: register B is absorbed into DSP tmp82_reg_6062_reg.
+DSP Report: register tmp82_reg_6062_reg is absorbed into DSP tmp82_reg_6062_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U102/gaussian_mac_mulaCeG_DSP48_11_U/p is absorbed into DSP tmp82_reg_6062_reg.
+DSP Report: operator gaussian_mac_mulaCeG_U102/gaussian_mac_mulaCeG_DSP48_11_U/m is absorbed into DSP tmp82_reg_6062_reg.
+DSP Report: Generating DSP tmp89_reg_6027_reg, operation Mode is: ((D'+A'')*(B:0x11b))'.
+DSP Report: register D is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: register A is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: register A is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: register tmp89_reg_6027_reg is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: operator gaussian_am_addmuBew_U89/gaussian_am_addmuBew_DSP48_10_U/m is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: operator gaussian_am_addmuBew_U89/gaussian_am_addmuBew_DSP48_10_U/ad is absorbed into DSP tmp89_reg_6027_reg.
+DSP Report: Generating DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p, operation Mode is: PCIN+(D'+A'')*(B:0x52).
+DSP Report: register D is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: register A is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/m is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: operator gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/ad is absorbed into DSP gaussian_ama_addmGfk_U107/gaussian_ama_addmGfk_DSP48_15_U/p.
+DSP Report: Generating DSP gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/m, operation Mode is: (A:0x11b)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: operator gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/m is absorbed into DSP gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/m.
+DSP Report: Generating DSP tmp87_reg_6022_reg, operation Mode is: (C+(A:0x1ac)*B'')'.
+DSP Report: register src_kernel_win_2_va_37_reg_5715_pp0_iter3_reg_reg is absorbed into DSP tmp87_reg_6022_reg.
+DSP Report: register src_kernel_win_2_va_37_reg_5715_pp0_iter4_reg_reg is absorbed into DSP tmp87_reg_6022_reg.
+DSP Report: register tmp87_reg_6022_reg is absorbed into DSP tmp87_reg_6022_reg.
+DSP Report: operator gaussian_mac_mulawdI_U88/gaussian_mac_mulawdI_DSP48_5_U/p is absorbed into DSP tmp87_reg_6022_reg.
+DSP Report: operator grp_fu_4414_p2 is absorbed into DSP tmp87_reg_6022_reg.
+DSP Report: Generating DSP gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p, operation Mode is: C+(A:0x1ac)*B''.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p is absorbed into DSP gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p.
+DSP Report: operator gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/m is absorbed into DSP gaussian_mac_mulatde_U105/gaussian_mac_mulatde_DSP48_2_U/p.
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_4_reg_5336_reg[1]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/p_neg394_i_reg_5322_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\GaussianBlur_U0/grp_Filter2D_fu_138 /\tmp_4_reg_5336_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_294_2_reg_5345_reg[1]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_5_reg_5331_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\GaussianBlur_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_Mat_exit45_pro_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_Mat_exit45_pro_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (gaussian_AXILiteS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module gaussian.
+WARNING: [Synth 8-3332] Sequential element (gaussian_AXILiteS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module gaussian.
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/p_neg394_i_reg_5322_reg[0]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_1_reg_5317_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_4_reg_5336_reg[2]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/p_neg394_i_reg_5322_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_294_2_reg_5345_reg[3]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_5_reg_5331_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_294_2_reg_5345_reg[2]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_fu_138/tmp_5_reg_5331_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 831.672 ; gain = 557.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Filter2D    | ((A:0x5c8)*B'')'       | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | ((A:0x3d3)*BCIN'')'    | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | C+(A:0x11b)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | A2*(B:0x52)            | 9      | 8      | -      | -      | 17     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | A''*(B:0x52)           | 9      | 8      | -      | -      | 17     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x11b)*B'')'     | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x5c8)*B'')'  | 12     | 9      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x5c8)*B''        | 9      | 12     | 21     | -      | 21     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C'+(A:0x5c8)*B''       | 9      | 12     | 22     | -      | 22     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x8bd)*B'')'  | 13     | 9      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | ((D'+A'')*(B:0x11b))'  | 9      | 10     | -      | 9      | 21     | 2    | 0    | -    | 1    | 0     | 1    | 0    | 
+|Filter2D    | PCIN+(D'+A'')*(B:0x52) | 9      | 8      | -      | 9      | 18     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | ((A:0x5c8)*B'')'       | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | ((A:0x3d3)*BCIN'')'    | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | C+(A:0x11b)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | A2*(B:0x52)            | 9      | 8      | -      | -      | 17     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | A''*(B:0x52)           | 9      | 8      | -      | -      | 17     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x11b)*B'')'     | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x5c8)*B'')'  | 12     | 9      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x5c8)*B''        | 9      | 12     | 21     | -      | 21     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C'+(A:0x5c8)*B''       | 9      | 12     | 22     | -      | 22     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x8bd)*B'')'  | 13     | 9      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | ((D'+A'')*(B:0x11b))'  | 9      | 10     | -      | 9      | 21     | 2    | 0    | -    | 1    | 0     | 1    | 0    | 
+|Filter2D    | PCIN+(D'+A'')*(B:0x52) | 9      | 8      | -      | 9      | 18     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | ((A:0x5c8)*B'')'       | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | ((A:0x3d3)*BCIN'')'    | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|Filter2D    | C+(A:0x11b)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | A2*(B:0x52)            | 9      | 8      | -      | -      | 17     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | A''*(B:0x52)           | 9      | 8      | -      | -      | 17     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x11b)*B'')'  | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x11b)*B'')'     | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x3d3)*B''        | 9      | 11     | 20     | -      | 20     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x5c8)*B'')'  | 12     | 9      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x5c8)*B''        | 9      | 12     | 21     | -      | 21     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|Filter2D    | C'+(A:0x5c8)*B''       | 9      | 12     | 22     | -      | 22     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|Filter2D    | (PCIN+(A:0x8bd)*B'')'  | 13     | 9      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|Filter2D    | ((D'+A'')*(B:0x11b))'  | 9      | 10     | -      | 9      | 21     | 2    | 0    | -    | 1    | 0     | 1    | 0    | 
+|Filter2D    | PCIN+(D'+A'')*(B:0x52) | 9      | 8      | -      | 9      | 18     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|Filter2D    | (A:0x11b)*B''          | 9      | 10     | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Filter2D    | (C+(A:0x1ac)*B'')'     | 8      | 9      | 18     | -      | 18     | 2    | 0    | 0    | -    | -     | 0    | 1    | 
+|Filter2D    | C+(A:0x1ac)*B''        | 9      | 10     | 19     | -      | 19     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_0/k_buf_0_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_1/k_buf_0_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_2/k_buf_0_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_4/k_buf_0_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_5/k_buf_0_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_6/k_buf_1_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_7/k_buf_1_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_8/k_buf_1_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_10/k_buf_1_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_12/k_buf_1_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_13/k_buf_2_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_14/k_buf_2_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_15/k_buf_2_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_16/k_buf_2_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/i_17/k_buf_2_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 891.645 ; gain = 617.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 916.406 ; gain = 642.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_bkb_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][10]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][11]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][12]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][13]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][14]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][15]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][16]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][17]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][18]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][19]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][20]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][21]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][22]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][23]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][11]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][10]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][13]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][12]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][15]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][14]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][24]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][25]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][26]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][27]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][28]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][29]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][30]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/src_cols_V_c14_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][31]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_472_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][17]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][16]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][19]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][18]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][21]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][20]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][23]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][22]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][25]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][24]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][27]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][26]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][29]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][28]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][31]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/src_rows_V_c13_U/U_fifo_w32_d2_A_ram/SRL_SIG_reg[0][30]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_467_reg[30]'
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_0_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_0_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_0_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_0_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_0_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_1_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_1_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_1_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_1_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_1_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_2_val_5_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_2_val_6_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_2_val_7_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_2_val_8_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_fu_138/k_buf_2_val_9_U/Filter2D_k_buf_0_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:59 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gaussian    | GaussianBlur_U0/grp_Filter2D_fu_138/src_kernel_win_0_va_3_fu_278_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|gaussian    | GaussianBlur_U0/grp_Filter2D_fu_138/src_kernel_win_1_va_3_fu_358_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|gaussian    | GaussianBlur_U0/grp_Filter2D_fu_138/src_kernel_win_2_va_3_fu_438_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   348|
+|2     |DSP48E1_10 |     3|
+|3     |DSP48E1_11 |     3|
+|4     |DSP48E1_2  |    21|
+|5     |DSP48E1_3  |    12|
+|6     |DSP48E1_4  |     9|
+|7     |DSP48E1_5  |     3|
+|8     |DSP48E1_6  |    12|
+|9     |DSP48E1_8  |     3|
+|10    |DSP48E1_9  |     3|
+|11    |LUT1       |   425|
+|12    |LUT2       |   395|
+|13    |LUT3       |   411|
+|14    |LUT4       |   605|
+|15    |LUT5       |   330|
+|16    |LUT6       |   809|
+|17    |MUXF7      |    96|
+|18    |RAMB18E1   |    15|
+|19    |SRL16E     |    88|
+|20    |FDRE       |  2321|
+|21    |FDSE       |    60|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+----------------------------------+------+
+|      |Instance                                  |Module                            |Cells |
++------+------------------------------------------+----------------------------------+------+
+|1     |top                                       |                                  |  5972|
+|2     |  inst                                    |gaussian                          |  5972|
+|3     |    AXIvideo2Mat_U0                       |AXIvideo2Mat                      |   572|
+|4     |    Block_Mat_exit45_pro_U0               |Block_Mat_exit45_pro              |     1|
+|5     |    GaussianBlur_U0                       |GaussianBlur                      |  3938|
+|6     |      grp_Filter2D_fu_138                 |Filter2D                          |  3870|
+|7     |        gaussian_ama_addmGfk_U101         |gaussian_ama_addmGfk              |     1|
+|8     |          gaussian_ama_addmGfk_DSP48_15_U |gaussian_ama_addmGfk_DSP48_15_115 |     1|
+|9     |        gaussian_ama_addmGfk_U107         |gaussian_ama_addmGfk_18           |     2|
+|10    |          gaussian_ama_addmGfk_DSP48_15_U |gaussian_ama_addmGfk_DSP48_15_114 |     2|
+|11    |        gaussian_ama_addmGfk_U95          |gaussian_ama_addmGfk_19           |     1|
+|12    |          gaussian_ama_addmGfk_DSP48_15_U |gaussian_ama_addmGfk_DSP48_15     |     1|
+|13    |        gaussian_mac_mulaDeQ_U103         |gaussian_mac_mulaDeQ              |     2|
+|14    |          gaussian_mac_mulaDeQ_DSP48_12_U |gaussian_mac_mulaDeQ_DSP48_12_113 |     2|
+|15    |        gaussian_mac_mulaDeQ_U91          |gaussian_mac_mulaDeQ_20           |     1|
+|16    |          gaussian_mac_mulaDeQ_DSP48_12_U |gaussian_mac_mulaDeQ_DSP48_12_112 |     1|
+|17    |        gaussian_mac_mulaDeQ_U97          |gaussian_mac_mulaDeQ_21           |     1|
+|18    |          gaussian_mac_mulaDeQ_DSP48_12_U |gaussian_mac_mulaDeQ_DSP48_12     |     1|
+|19    |        gaussian_mac_mulaEe0_U104         |gaussian_mac_mulaEe0              |     1|
+|20    |          gaussian_mac_mulaEe0_DSP48_13_U |gaussian_mac_mulaEe0_DSP48_13_111 |     1|
+|21    |        gaussian_mac_mulaEe0_U92          |gaussian_mac_mulaEe0_22           |     1|
+|22    |          gaussian_mac_mulaEe0_DSP48_13_U |gaussian_mac_mulaEe0_DSP48_13_110 |     1|
+|23    |        gaussian_mac_mulaEe0_U98          |gaussian_mac_mulaEe0_23           |     1|
+|24    |          gaussian_mac_mulaEe0_DSP48_13_U |gaussian_mac_mulaEe0_DSP48_13     |     1|
+|25    |        gaussian_mac_mulaFfa_U100         |gaussian_mac_mulaFfa              |     1|
+|26    |          gaussian_mac_mulaFfa_DSP48_14_U |gaussian_mac_mulaFfa_DSP48_14_109 |     1|
+|27    |        gaussian_mac_mulaFfa_U106         |gaussian_mac_mulaFfa_24           |     1|
+|28    |          gaussian_mac_mulaFfa_DSP48_14_U |gaussian_mac_mulaFfa_DSP48_14_108 |     1|
+|29    |        gaussian_mac_mulaFfa_U94          |gaussian_mac_mulaFfa_25           |     1|
+|30    |          gaussian_mac_mulaFfa_DSP48_14_U |gaussian_mac_mulaFfa_DSP48_14     |     1|
+|31    |        gaussian_mac_mularcU_U51          |gaussian_mac_mularcU              |     2|
+|32    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0_107  |     2|
+|33    |        gaussian_mac_mularcU_U52          |gaussian_mac_mularcU_26           |     1|
+|34    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0_106  |     1|
+|35    |        gaussian_mac_mularcU_U53          |gaussian_mac_mularcU_27           |     1|
+|36    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0_105  |     1|
+|37    |        gaussian_mac_mularcU_U56          |gaussian_mac_mularcU_28           |     1|
+|38    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0_104  |     1|
+|39    |        gaussian_mac_mularcU_U59          |gaussian_mac_mularcU_29           |     1|
+|40    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0_103  |     1|
+|41    |        gaussian_mac_mularcU_U62          |gaussian_mac_mularcU_30           |     1|
+|42    |          gaussian_mac_mularcU_DSP48_0_U  |gaussian_mac_mularcU_DSP48_0      |     1|
+|43    |        gaussian_mac_mulasc4_U54          |gaussian_mac_mulasc4              |     1|
+|44    |          gaussian_mac_mulasc4_DSP48_1_U  |gaussian_mac_mulasc4_DSP48_1_102  |     1|
+|45    |        gaussian_mac_mulasc4_U57          |gaussian_mac_mulasc4_31           |     1|
+|46    |          gaussian_mac_mulasc4_DSP48_1_U  |gaussian_mac_mulasc4_DSP48_1_101  |     1|
+|47    |        gaussian_mac_mulasc4_U60          |gaussian_mac_mulasc4_32           |     3|
+|48    |          gaussian_mac_mulasc4_DSP48_1_U  |gaussian_mac_mulasc4_DSP48_1      |     3|
+|49    |        gaussian_mac_mulatde_U105         |gaussian_mac_mulatde              |     2|
+|50    |          gaussian_mac_mulatde_DSP48_2_U  |gaussian_mac_mulatde_DSP48_2_100  |     2|
+|51    |        gaussian_mac_mulatde_U93          |gaussian_mac_mulatde_33           |     1|
+|52    |          gaussian_mac_mulatde_DSP48_2_U  |gaussian_mac_mulatde_DSP48_2_99   |     1|
+|53    |        gaussian_mac_mulatde_U99          |gaussian_mac_mulatde_34           |     1|
+|54    |          gaussian_mac_mulatde_DSP48_2_U  |gaussian_mac_mulatde_DSP48_2      |     1|
+|55    |        gaussian_mac_mulaudo_U63          |gaussian_mac_mulaudo              |     1|
+|56    |          gaussian_mac_mulaudo_DSP48_3_U  |gaussian_mac_mulaudo_DSP48_3_98   |     1|
+|57    |        gaussian_mac_mulaudo_U66          |gaussian_mac_mulaudo_35           |     1|
+|58    |          gaussian_mac_mulaudo_DSP48_3_U  |gaussian_mac_mulaudo_DSP48_3_97   |     1|
+|59    |        gaussian_mac_mulaudo_U69          |gaussian_mac_mulaudo_36           |     3|
+|60    |          gaussian_mac_mulaudo_DSP48_3_U  |gaussian_mac_mulaudo_DSP48_3      |     3|
+|61    |        gaussian_mac_mulawdI_U65          |gaussian_mac_mulawdI              |    41|
+|62    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5_96   |    41|
+|63    |        gaussian_mac_mulawdI_U68          |gaussian_mac_mulawdI_37           |    41|
+|64    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5_95   |    41|
+|65    |        gaussian_mac_mulawdI_U71          |gaussian_mac_mulawdI_38           |    41|
+|66    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5_94   |    41|
+|67    |        gaussian_mac_mulawdI_U76          |gaussian_mac_mulawdI_39           |     1|
+|68    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5_93   |     1|
+|69    |        gaussian_mac_mulawdI_U82          |gaussian_mac_mulawdI_40           |     1|
+|70    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5_92   |     1|
+|71    |        gaussian_mac_mulawdI_U88          |gaussian_mac_mulawdI_41           |     2|
+|72    |          gaussian_mac_mulawdI_DSP48_5_U  |gaussian_mac_mulawdI_DSP48_5      |     2|
+|73    |        gaussian_mac_mulaxdS_U72          |gaussian_mac_mulaxdS              |     1|
+|74    |          gaussian_mac_mulaxdS_DSP48_6_U  |gaussian_mac_mulaxdS_DSP48_6_91   |     1|
+|75    |        gaussian_mac_mulaxdS_U78          |gaussian_mac_mulaxdS_42           |     1|
+|76    |          gaussian_mac_mulaxdS_DSP48_6_U  |gaussian_mac_mulaxdS_DSP48_6_90   |     1|
+|77    |        gaussian_mac_mulaxdS_U84          |gaussian_mac_mulaxdS_43           |     1|
+|78    |          gaussian_mac_mulaxdS_DSP48_6_U  |gaussian_mac_mulaxdS_DSP48_6      |     1|
+|79    |        gaussian_mac_mulayd2_U73          |gaussian_mac_mulayd2              |     1|
+|80    |          gaussian_mac_mulayd2_DSP48_7_U  |gaussian_mac_mulayd2_DSP48_7_89   |     1|
+|81    |        gaussian_mac_mulayd2_U79          |gaussian_mac_mulayd2_44           |     1|
+|82    |          gaussian_mac_mulayd2_DSP48_7_U  |gaussian_mac_mulayd2_DSP48_7_88   |     1|
+|83    |        gaussian_mac_mulayd2_U85          |gaussian_mac_mulayd2_45           |     2|
+|84    |          gaussian_mac_mulayd2_DSP48_7_U  |gaussian_mac_mulayd2_DSP48_7      |     2|
+|85    |        gaussian_mux_53_8qcK_U26          |gaussian_mux_53_8qcK              |    24|
+|86    |        gaussian_mux_53_8qcK_U27          |gaussian_mux_53_8qcK_46           |    24|
+|87    |        gaussian_mux_53_8qcK_U28          |gaussian_mux_53_8qcK_47           |    24|
+|88    |        gaussian_mux_53_8qcK_U29          |gaussian_mux_53_8qcK_48           |    24|
+|89    |        gaussian_mux_53_8qcK_U30          |gaussian_mux_53_8qcK_49           |    16|
+|90    |        gaussian_mux_53_8qcK_U36          |gaussian_mux_53_8qcK_50           |    24|
+|91    |        gaussian_mux_53_8qcK_U37          |gaussian_mux_53_8qcK_51           |    24|
+|92    |        gaussian_mux_53_8qcK_U38          |gaussian_mux_53_8qcK_52           |    24|
+|93    |        gaussian_mux_53_8qcK_U39          |gaussian_mux_53_8qcK_53           |    24|
+|94    |        gaussian_mux_53_8qcK_U40          |gaussian_mux_53_8qcK_54           |    16|
+|95    |        gaussian_mux_53_8qcK_U46          |gaussian_mux_53_8qcK_55           |    24|
+|96    |        gaussian_mux_53_8qcK_U47          |gaussian_mux_53_8qcK_56           |    24|
+|97    |        gaussian_mux_53_8qcK_U48          |gaussian_mux_53_8qcK_57           |    24|
+|98    |        gaussian_mux_53_8qcK_U49          |gaussian_mux_53_8qcK_58           |    24|
+|99    |        gaussian_mux_53_8qcK_U50          |gaussian_mux_53_8qcK_59           |    16|
+|100   |        k_buf_0_val_5_U                   |Filter2D_k_buf_0_bkb              |     9|
+|101   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_87       |     9|
+|102   |        k_buf_0_val_6_U                   |Filter2D_k_buf_0_bkb_60           |    18|
+|103   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_86       |    18|
+|104   |        k_buf_0_val_7_U                   |Filter2D_k_buf_0_bkb_61           |     9|
+|105   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_85       |     9|
+|106   |        k_buf_0_val_8_U                   |Filter2D_k_buf_0_bkb_62           |    17|
+|107   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_84       |    17|
+|108   |        k_buf_0_val_9_U                   |Filter2D_k_buf_0_bkb_63           |    33|
+|109   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_83       |    33|
+|110   |        k_buf_1_val_5_U                   |Filter2D_k_buf_0_bkb_64           |     9|
+|111   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_82       |     9|
+|112   |        k_buf_1_val_6_U                   |Filter2D_k_buf_0_bkb_65           |    17|
+|113   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_81       |    17|
+|114   |        k_buf_1_val_7_U                   |Filter2D_k_buf_0_bkb_66           |     9|
+|115   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_80       |     9|
+|116   |        k_buf_1_val_8_U                   |Filter2D_k_buf_0_bkb_67           |    17|
+|117   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_79       |    17|
+|118   |        k_buf_1_val_9_U                   |Filter2D_k_buf_0_bkb_68           |    33|
+|119   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_78       |    33|
+|120   |        k_buf_2_val_5_U                   |Filter2D_k_buf_0_bkb_69           |     9|
+|121   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_77       |     9|
+|122   |        k_buf_2_val_6_U                   |Filter2D_k_buf_0_bkb_70           |    17|
+|123   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_76       |    17|
+|124   |        k_buf_2_val_7_U                   |Filter2D_k_buf_0_bkb_71           |    10|
+|125   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_75       |    10|
+|126   |        k_buf_2_val_8_U                   |Filter2D_k_buf_0_bkb_72           |    18|
+|127   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram_74       |    18|
+|128   |        k_buf_2_val_9_U                   |Filter2D_k_buf_0_bkb_73           |    39|
+|129   |          Filter2D_k_buf_0_bkb_ram_U      |Filter2D_k_buf_0_bkb_ram          |    39|
+|130   |    Mat2AXIvideo_U0                       |Mat2AXIvideo                      |   452|
+|131   |    dst_cols_V_c_U                        |fifo_w32_d4_A                     |    46|
+|132   |      U_fifo_w32_d4_A_ram                 |fifo_w32_d4_A_shiftReg_17         |    34|
+|133   |    dst_data_stream_0_V_U                 |fifo_w8_d2_A                      |    31|
+|134   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg_16          |    24|
+|135   |    dst_data_stream_1_V_U                 |fifo_w8_d2_A_0                    |    31|
+|136   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg_15          |    24|
+|137   |    dst_data_stream_2_V_U                 |fifo_w8_d2_A_1                    |    31|
+|138   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg_14          |    24|
+|139   |    dst_rows_V_c_U                        |fifo_w32_d4_A_2                   |    45|
+|140   |      U_fifo_w32_d4_A_ram                 |fifo_w32_d4_A_shiftReg            |    34|
+|141   |    gaussian_AXILiteS_s_axi_U             |gaussian_AXILiteS_s_axi           |   251|
+|142   |    src_cols_V_c14_U                      |fifo_w32_d2_A                     |    72|
+|143   |      U_fifo_w32_d2_A_ram                 |fifo_w32_d2_A_shiftReg_13         |    64|
+|144   |    src_cols_V_c_U                        |fifo_w32_d2_A_3                   |   105|
+|145   |      U_fifo_w32_d2_A_ram                 |fifo_w32_d2_A_shiftReg_12         |    96|
+|146   |    src_data_stream_0_V_U                 |fifo_w8_d2_A_4                    |    63|
+|147   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg_11          |    56|
+|148   |    src_data_stream_1_V_U                 |fifo_w8_d2_A_5                    |    63|
+|149   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg_10          |    56|
+|150   |    src_data_stream_2_V_U                 |fifo_w8_d2_A_6                    |    63|
+|151   |      U_fifo_w8_d2_A_ram                  |fifo_w8_d2_A_shiftReg             |    56|
+|152   |    src_rows_V_c13_U                      |fifo_w32_d2_A_7                   |    72|
+|153   |      U_fifo_w32_d2_A_ram                 |fifo_w32_d2_A_shiftReg_9          |    64|
+|154   |    src_rows_V_c_U                        |fifo_w32_d2_A_8                   |   104|
+|155   |      U_fifo_w32_d2_A_ram                 |fifo_w32_d2_A_shiftReg            |    96|
+|156   |    start_for_GaussiaIfE_U                |start_for_GaussiaIfE              |    14|
+|157   |    start_for_Mat2AXIHfu_U                |start_for_Mat2AXIHfu              |    16|
++------+------------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:59 . Memory (MB): peak = 955.555 ; gain = 681.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 955.555 ; gain = 304.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:59 . Memory (MB): peak = 955.555 ; gain = 681.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 955.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+306 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:03 . Memory (MB): peak = 955.555 ; gain = 687.031
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 955.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1/cv_ov5640_gaussian_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cv_ov5640_gaussian_0_0, cache-ID = a4c7d796dd5df389
+INFO: [Coretcl 2-1174] Renamed 156 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 955.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1/cv_ov5640_gaussian_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cv_ov5640_gaussian_0_0_utilization_synth.rpt -pb cv_ov5640_gaussian_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 12:17:03 2024...

@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cv_ov5640_axi_iic_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axi_intc_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axi_intc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axi_smc_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_6_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axi_vdma_1_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axi_vdma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_clk_wiz_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_3_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_4_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_1_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_k_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_k_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_xbar_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_2_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axi_vdma_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_5_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_3_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_4_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_1_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_ss_k_2_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_k_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_k_3_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_k_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_k_1_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_k_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slid_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slid_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_canny_edge_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_canny_edge_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axis_subset_converter_3_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axis_subset_converter_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slid_1_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slid_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_15_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_gaussian_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_gaussian_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_xf_dilation_accel_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_xf_dilation_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_sobelFilter_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_sobelFilter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axis_subset_converter_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axis_subset_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_subsample_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_subsample_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_8_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_xbar_1_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_9_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_axis_subset_converter_2_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axis_subset_converter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_ss_slidr_7_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_ss_slidr_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_xbar_2_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_axis_subset_converter_1_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_axis_subset_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_equalizeHist_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_equalizeHist_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_rgb2hsv_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_xf_erosion_accel_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_xf_erosion_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_2_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_processing_system7_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_v_axi4s_vid_out_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_9_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_12_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_8_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_v_tc_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_v_tc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_14_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_14_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_6_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_v_vid_in_axi4s_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_v_vid_in_axi4s_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_13_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_11_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_11_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_auto_pc_5_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_rgb2dvi_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2dvi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_v_demosaic_0_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_10_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="cv_ov5640_rst_ps7_0_100M_0_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cv_ov5640_auto_pc_7_synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_auto_pc_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cv_ov5640_axi_iic_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axi_intc_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axi_smc_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_6_synth_1"/>
+		<Parent Id="cv_ov5640_axi_vdma_1_0_synth_1"/>
+		<Parent Id="cv_ov5640_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_4_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_0_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_2_synth_1"/>
+		<Parent Id="cv_ov5640_axi_vdma_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_5_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_4_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_2_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slid_0_synth_1"/>
+		<Parent Id="cv_ov5640_canny_edge_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_3_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slid_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_15_synth_1"/>
+		<Parent Id="cv_ov5640_gaussian_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_xf_dilation_accel_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_sobelFilter_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_subsample_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_8_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_9_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_2_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_7_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_2_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="cv_ov5640_equalizeHist_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_rgb2hsv_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_xf_erosion_accel_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_2_synth_1"/>
+		<Parent Id="cv_ov5640_processing_system7_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_9_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_12_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_8_synth_1"/>
+		<Parent Id="cv_ov5640_v_tc_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_14_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_6_synth_1"/>
+		<Parent Id="cv_ov5640_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_13_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_11_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_5_synth_1"/>
+		<Parent Id="cv_ov5640_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_v_demosaic_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_10_synth_1"/>
+		<Parent Id="cv_ov5640_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_7_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="cv_ov5640_axi_iic_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axi_intc_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axi_smc_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_6_synth_1"/>
+		<Parent Id="cv_ov5640_axi_vdma_1_0_synth_1"/>
+		<Parent Id="cv_ov5640_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_4_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_0_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_2_synth_1"/>
+		<Parent Id="cv_ov5640_axi_vdma_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_5_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_4_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_2_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_3_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_k_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slid_0_synth_1"/>
+		<Parent Id="cv_ov5640_canny_edge_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_3_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slid_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_15_synth_1"/>
+		<Parent Id="cv_ov5640_gaussian_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_xf_dilation_accel_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_sobelFilter_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_subsample_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_8_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_1_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_9_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_2_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_ss_slidr_7_synth_1"/>
+		<Parent Id="cv_ov5640_xbar_2_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_0_synth_1"/>
+		<Parent Id="cv_ov5640_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="cv_ov5640_equalizeHist_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_rgb2hsv_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_xf_erosion_accel_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_2_synth_1"/>
+		<Parent Id="cv_ov5640_processing_system7_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_9_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_12_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_8_synth_1"/>
+		<Parent Id="cv_ov5640_v_tc_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_14_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_6_synth_1"/>
+		<Parent Id="cv_ov5640_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_13_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_11_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_5_synth_1"/>
+		<Parent Id="cv_ov5640_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_v_demosaic_0_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_10_synth_1"/>
+		<Parent Id="cv_ov5640_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="cv_ov5640_auto_pc_7_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,1022 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 19 12:17:51 2024
+# Process ID: 11672
+# Current directory: D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1
+# Command line: vivado.exe -log cv_ov5640_rgb2hsv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cv_ov5640_rgb2hsv_0_0.tcl
+# Log file: D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/cv_ov5640_rgb2hsv_0_0.vds
+# Journal file: D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cv_ov5640_rgb2hsv_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Pynq_CV_OV5640_master/boards/src/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.cache/ip 
+Command: synth_design -top cv_ov5640_rgb2hsv_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10768 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 379.879 ; gain = 106.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cv_ov5640_rgb2hsv_0_0' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_rgb2hsv_0_0/synth/cv_ov5640_rgb2hsv_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_AXILiteS_s_axi' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_ROWS_CTRL bound to: 5'b10100 
+	Parameter ADDR_COLS_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_COLS_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_AXILiteS_s_axi.v:203]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_AXILiteS_s_axi' (1#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Block_Mat_exit45_pro' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Block_Mat_exit45_pro.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Block_Mat_exit45_pro.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Mat_exit45_pro' (2#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Block_Mat_exit45_pro.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (3#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state34 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:94]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:517]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_udiv_20s_bkb' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:131]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 24 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_udiv_20s_bkb_div' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:70]
+	Parameter in0_WIDTH bound to: 20 - type: integer 
+	Parameter in1_WIDTH bound to: 8 - type: integer 
+	Parameter out_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_udiv_20s_bkb_div_u' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:10]
+	Parameter in0_WIDTH bound to: 20 - type: integer 
+	Parameter in1_WIDTH bound to: 8 - type: integer 
+	Parameter out_WIDTH bound to: 20 - type: integer 
+	Parameter cal_WIDTH bound to: 20 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element loop[19].divisor_tmp_reg[20] was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_udiv_20s_bkb_div_u' (4#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_udiv_20s_bkb_div' (5#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_udiv_20s_bkb' (6#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:131]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_mac_muladcud' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mac_muladcud.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 27 - type: integer 
+	Parameter dout_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_mac_muladcud_DSP48_0' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mac_muladcud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_mac_muladcud_DSP48_0' (7#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mac_muladcud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_mac_muladcud' (8#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mac_muladcud.v:34]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_mul_mul_2dEe' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mul_mul_2dEe.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 28 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_mul_mul_2dEe_DSP48_1' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mul_mul_2dEe.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_mul_mul_2dEe_DSP48_1' (9#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mul_mul_2dEe.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_mul_mul_2dEe' (10#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_mul_mul_2dEe.v:14]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1763]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1765]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1769]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1771]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1891]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1893]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1957]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1959]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1963]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1965]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1969]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1971]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2007]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2063]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2065]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2067]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2071]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2077]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2079]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor' (11#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:91]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:278]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:304]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:330]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:392]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (12#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A_shiftReg' (13#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A' (14#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d4_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d4_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d4_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d4_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d4_A_shiftReg' (15#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d4_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d4_A' (16#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w32_d4_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (17#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (18#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIeOg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_Mat2AXIeOg.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIeOg_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_Mat2AXIeOg.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIeOg_shiftReg' (19#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_Mat2AXIeOg.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIeOg' (20#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_Mat2AXIeOg.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColofYi' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_CvtColofYi.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColofYi_shiftReg' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_CvtColofYi.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColofYi_shiftReg' (21#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_CvtColofYi.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColofYi' (22#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/start_for_CvtColofYi.v:45]
+WARNING: [Synth 8-6014] Unused sequential element AXIvideo2Mat_U0_ap_ready_count_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv.v:621]
+WARNING: [Synth 8-6014] Unused sequential element Block_Mat_exit45_pro_U0_ap_ready_count_reg was removed.  [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv.v:629]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv' (23#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'cv_ov5640_rgb2hsv_0_0' (24#1) [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_rgb2hsv_0_0/synth/cv_ov5640_rgb2hsv_0_0.v:58]
+WARNING: [Synth 8-3331] design rgb2hsv_udiv_20s_bkb_div_u has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 455.121 ; gain = 181.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 455.121 ; gain = 181.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 455.121 ; gain = 181.266
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_rgb2hsv_0_0/constraints/rgb2hsv_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ip/cv_ov5640_rgb2hsv_0_0/constraints/rgb2hsv_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 827.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 829.309 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 830.434 ; gain = 3.203
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 830.434 ; gain = 556.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 830.434 ; gain = 556.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 830.434 ; gain = 556.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rgb2hsv_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rgb2hsv_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[18].remd_tmp_reg[19]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[17].remd_tmp_reg[18]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[16].remd_tmp_reg[17]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[15].remd_tmp_reg[16]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[14].remd_tmp_reg[15]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[13].remd_tmp_reg[14]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[12].remd_tmp_reg[13]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[11].remd_tmp_reg[12]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[10].remd_tmp_reg[11]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[9].remd_tmp_reg[10]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '20' to '19' bits. [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/rgb2hsv_udiv_20s_bkb.v:53]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp0_iter1_p_093_0_i_i_reg_314_reg[19:0]' into 'ap_phi_reg_pp0_iter1_p_0193_0_i_i_reg_303_reg[19:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1169]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp0_iter2_p_093_0_i_i_reg_314_reg[19:0]' into 'ap_phi_reg_pp0_iter2_p_0193_0_i_i_reg_303_reg[19:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1231]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp0_iter3_p_093_0_i_i_reg_314_reg[19:0]' into 'ap_phi_reg_pp0_iter3_p_0193_0_i_i_reg_303_reg[19:0]' [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:1238]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2007]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.srcs/sources_1/bd/cv_ov5640/ipshared/63da/hdl/verilog/CvtColor.v:2015]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_6_i_fu_508_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_ones_fu_752_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_zeros_fu_758_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_ones_1_fu_858_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_zeros_1_fu_864_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rgb2hsv_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rgb2hsv_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 830.434 ; gain = 556.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     37 Bit       Adders := 2     
+	   3 Input     37 Bit       Adders := 1     
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 40    
+	   3 Input     16 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
+	               31 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
+	               20 Bit    Registers := 104   
+	               19 Bit    Registers := 38    
+	                9 Bit    Registers := 25    
+	                8 Bit    Registers := 115   
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 250   
++---Muxes : 
+	   3 Input     36 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 38    
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 24    
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 18    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 115   
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rgb2hsv_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Block_Mat_exit45_pro 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 26    
+Module rgb2hsv_udiv_20s_bkb_div_u 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 20    
++---Registers : 
+	               20 Bit    Registers := 23    
+	               19 Bit    Registers := 19    
+	                8 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 19    
+Module rgb2hsv_udiv_20s_bkb_div 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     37 Bit       Adders := 2     
+	   3 Input     37 Bit       Adders := 1     
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               20 Bit    Registers := 52    
+	                9 Bit    Registers := 25    
+	                8 Bit    Registers := 60    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 166   
++---Muxes : 
+	   3 Input     36 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 18    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 14    
+Module fifo_w32_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w32_d4_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIeOg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module start_for_CvtColofYi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rgb2hsv 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "data41" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Range1_all_ones_fu_752_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_zeros_fu_758_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_ones_1_fu_858_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_i_fu_508_p2" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/p, operation Mode is: C+A2*B.
+DSP Report: register A is absorbed into DSP rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/p.
+DSP Report: operator rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/p is absorbed into DSP rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/p.
+DSP Report: operator rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/m is absorbed into DSP rgb2hsv_mac_muladcud_U23/rgb2hsv_mac_muladcud_DSP48_0_U/p.
+DSP Report: Generating DSP r_V_3_reg_1185_reg, operation Mode is: (A2*B'')'.
+DSP Report: register diff_reg_1137_pp0_iter26_reg_reg is absorbed into DSP r_V_3_reg_1185_reg.
+DSP Report: register diff_reg_1137_pp0_iter27_reg_reg is absorbed into DSP r_V_3_reg_1185_reg.
+DSP Report: register ap_phi_reg_pp0_iter28_p_093_0_i_i_reg_314_reg is absorbed into DSP r_V_3_reg_1185_reg.
+DSP Report: register r_V_3_reg_1185_reg is absorbed into DSP r_V_3_reg_1185_reg.
+DSP Report: operator rgb2hsv_mul_mul_2dEe_U24/rgb2hsv_mul_mul_2dEe_DSP48_1_U/p is absorbed into DSP r_V_3_reg_1185_reg.
+WARNING: [Synth 8-3331] design rgb2hsv_udiv_20s_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port in_r_TDEST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/dividend0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/remd_tmp_reg[0][18] )
+INFO: [Synth 8-3886] merging instance 'inst/CvtColor_U0/p_lshr_f_i_reg_1180_reg[34]' (FDE) to 'inst/CvtColor_U0/tmp_reg_1175_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Mat2AXIvideo_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_Mat_exit45_pro_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_Mat_exit45_pro_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/rgb2hsv_udiv_20s_bkb_div_u_0/dividend_tmp_reg[0][16] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module rgb2hsv_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module rgb2hsv_AXILiteS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 830.434 ; gain = 556.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CvtColor    | C+A2*B      | 21     | 16     | 28     | -      | 36     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|CvtColor    | (A2*B'')'   | 20     | 8      | -      | -      | 28     | 1    | 2    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:49 . Memory (MB): peak = 853.613 ; gain = 579.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 871.770 ; gain = 597.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:54 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:55 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[19] | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[18] | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[17] | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[16] | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[15] | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[14] | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[13] | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[12] | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[11] | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[10] | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[9]  | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[8]  | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[7]  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[6]  | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[5]  | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[4]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[3]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[2]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U21/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[1]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[19] | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[18] | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[17] | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[16] | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[15] | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[14] | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[13] | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[12] | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[11] | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[10] | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[9]  | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[8]  | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[7]  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[6]  | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[5]  | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[4]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[3]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[2]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/rgb2hsv_udiv_20s_bkb_U22/rgb2hsv_udiv_20s_bkb_div_U/quot_reg[1]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv     | CvtColor_U0/tmp_1_i_reg_1061_pp0_iter25_reg_reg[0]                           | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/tmp_10_i_reg_1120_pp0_iter26_reg_reg[0]                          | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/sub_V_reg_1131_pp0_iter26_reg_reg[8]                             | 24     | 9     | NO           | NO                 | YES               | 0      | 9       | 
+|rgb2hsv     | CvtColor_U0/diff_reg_1137_pp0_iter25_reg_reg[7]                              | 22     | 8     | NO           | NO                 | YES               | 0      | 8       | 
+|rgb2hsv     | CvtColor_U0/tmp_6_reg_1105_pp0_iter29_reg_reg[7]                             | 26     | 8     | NO           | NO                 | NO                | 0      | 8       | 
+|rgb2hsv     | CvtColor_U0/tmp_8_i_reg_1142_pp0_iter25_reg_reg[0]                           | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/tmp_14_i_reg_1126_pp0_iter26_reg_reg[0]                          | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|rgb2hsv     | CvtColor_U0/tmp_6_i_reg_1151_pp0_iter26_reg_reg[0]                           | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++------------+------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   307|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_2 |     1|
+|4     |LUT1      |   511|
+|5     |LUT2      |   411|
+|6     |LUT3      |   794|
+|7     |LUT4      |   351|
+|8     |LUT5      |   171|
+|9     |LUT6      |   234|
+|10    |SRL16E    |    94|
+|11    |SRLC32E   |    38|
+|12    |FDRE      |  2479|
+|13    |FDSE      |    35|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+------------------------------+------+
+|      |Instance                               |Module                        |Cells |
++------+---------------------------------------+------------------------------+------+
+|1     |top                                    |                              |  5427|
+|2     |  inst                                 |rgb2hsv                       |  5427|
+|3     |    AXIvideo2Mat_U0                    |AXIvideo2Mat                  |   578|
+|4     |    Block_Mat_exit45_pro_U0            |Block_Mat_exit45_pro          |     1|
+|5     |    CvtColor_U0                        |CvtColor                      |  3371|
+|6     |      rgb2hsv_mac_muladcud_U23         |rgb2hsv_mac_muladcud          |    22|
+|7     |        rgb2hsv_mac_muladcud_DSP48_0_U |rgb2hsv_mac_muladcud_DSP48_0  |    22|
+|8     |      rgb2hsv_udiv_20s_bkb_U21         |rgb2hsv_udiv_20s_bkb          |  1230|
+|9     |        rgb2hsv_udiv_20s_bkb_div_U     |rgb2hsv_udiv_20s_bkb_div_19   |  1223|
+|10    |          rgb2hsv_udiv_20s_bkb_div_u_0 |rgb2hsv_udiv_20s_bkb_div_u_20 |  1165|
+|11    |      rgb2hsv_udiv_20s_bkb_U22         |rgb2hsv_udiv_20s_bkb_18       |  1223|
+|12    |        rgb2hsv_udiv_20s_bkb_div_U     |rgb2hsv_udiv_20s_bkb_div      |  1216|
+|13    |          rgb2hsv_udiv_20s_bkb_div_u_0 |rgb2hsv_udiv_20s_bkb_div_u    |  1168|
+|14    |    Mat2AXIvideo_U0                    |Mat2AXIvideo                  |   456|
+|15    |    dst_cols_V_c_U                     |fifo_w32_d4_A                 |    45|
+|16    |      U_fifo_w32_d4_A_ram              |fifo_w32_d4_A_shiftReg_17     |    34|
+|17    |    dst_data_stream_0_V_U              |fifo_w8_d2_A                  |    33|
+|18    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_16      |    24|
+|19    |    dst_data_stream_1_V_U              |fifo_w8_d2_A_0                |    33|
+|20    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_15      |    24|
+|21    |    dst_data_stream_2_V_U              |fifo_w8_d2_A_1                |    33|
+|22    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_14      |    24|
+|23    |    dst_rows_V_c_U                     |fifo_w32_d4_A_2               |    49|
+|24    |      U_fifo_w32_d4_A_ram              |fifo_w32_d4_A_shiftReg        |    36|
+|25    |    rgb2hsv_AXILiteS_s_axi_U           |rgb2hsv_AXILiteS_s_axi        |   248|
+|26    |    src_cols_V_c14_U                   |fifo_w32_d2_A                 |   106|
+|27    |      U_fifo_w32_d2_A_ram              |fifo_w32_d2_A_shiftReg_13     |    97|
+|28    |    src_cols_V_c_U                     |fifo_w32_d2_A_3               |   108|
+|29    |      U_fifo_w32_d2_A_ram              |fifo_w32_d2_A_shiftReg_12     |    97|
+|30    |    src_data_stream_0_V_U              |fifo_w8_d2_A_4                |    47|
+|31    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_11      |    38|
+|32    |    src_data_stream_1_V_U              |fifo_w8_d2_A_5                |    33|
+|33    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_10      |    25|
+|34    |    src_data_stream_2_V_U              |fifo_w8_d2_A_6                |    38|
+|35    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg         |    29|
+|36    |    src_rows_V_c13_U                   |fifo_w32_d2_A_7               |   106|
+|37    |      U_fifo_w32_d2_A_ram              |fifo_w32_d2_A_shiftReg_9      |    97|
+|38    |    src_rows_V_c_U                     |fifo_w32_d2_A_8               |   107|
+|39    |      U_fifo_w32_d2_A_ram              |fifo_w32_d2_A_shiftReg        |    97|
+|40    |    start_for_CvtColofYi_U             |start_for_CvtColofYi          |    16|
+|41    |    start_for_Mat2AXIeOg_U             |start_for_Mat2AXIeOg          |    17|
++------+---------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 906.367 ; gain = 257.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 906.367 ; gain = 632.512
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 309 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 906.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:00 . Memory (MB): peak = 906.367 ; gain = 638.609
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 906.367 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/cv_ov5640_rgb2hsv_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cv_ov5640_rgb2hsv_0_0, cache-ID = ce16e54f41486388
+INFO: [Coretcl 2-1174] Renamed 40 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 906.367 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Pynq_CV_OV5640_master/boards/Pynq_Z2/ov5640/bitstream/cv_ov5640/cv_ov5640.runs/cv_ov5640_rgb2hsv_0_0_synth_1/cv_ov5640_rgb2hsv_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cv_ov5640_rgb2hsv_0_0_utilization_synth.rpt -pb cv_ov5640_rgb2hsv_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 12:18:59 2024...
