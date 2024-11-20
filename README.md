@@ -1,4 +1,6 @@
 ## Introduction
+> [!NOTE]  
+> This project is a fork of the repository from [xupsh/Pynq-CV-OV5640](https://github.com/xupsh/Pynq-CV-OV5640) and I want to express my appreciation for their work.
 
 In this PYNQ Overlay, picture is captured from an OV5640 camera which is connected to PL side, and several accelerated image processing algorithms are contained in this Overlay, you can choose which algorithm is enabled without downloading a new bitstream. 
 ![](./images/Architecture.png)
